@@ -17,7 +17,8 @@ do
   echo "$i $max_temp $min_temp" >> max-min-temps.txt
 done
 
-echo "set terminal dumb
+echo "set terminal eps
+set output 'min-max-temps-2011-11.eps'
 set title 'November 2011 Maximum and Minimum Temperatures'
 set xrange [01:30]
 set xlabel 'Day'

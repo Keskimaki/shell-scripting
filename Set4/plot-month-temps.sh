@@ -21,7 +21,8 @@ do
   echo "$day $max_temp $min_temp" >> max-min-temps.txt
 done
 
-echo "set terminal dumb
+echo "set terminal eps
+set output 'min-max-temps-$date.eps'
 set title 'Maximum and Minimum Temperatures'
 set xrange [1:$day]
 set xlabel 'Day'

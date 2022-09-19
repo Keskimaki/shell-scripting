@@ -12,7 +12,8 @@ do
   echo "$i $max_temp" >> max-temps.txt
 done
 
-echo "set terminal dumb
+echo "set terminal eps
+set output 'max-temps-2011-11.eps'
 set title 'November 2011 Maximum Temperatures'
 set xrange [01:30]
 set xlabel 'Day'
